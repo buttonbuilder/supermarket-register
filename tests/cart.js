@@ -11,7 +11,7 @@ describe('cart.js', function () {
     it('should give a 400 with no body', function(done){
       request.post('/cart').expect(400,done)
     });
-    it('should give a 200 with a right reqyest body', function(done){
+    it('should give a 200 with a right request body', function(done){
       request.post('/cart').send({"itemList":"A12T-4GH7-QPL9-3N4M"}).expect(200,done)
     });
   });
