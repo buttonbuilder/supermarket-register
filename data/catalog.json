@@ -1,8 +1,8 @@
 {
   "inventory" :[
+    {"product": "Tuna", "productCode": "65P1-UDGM-XH2M-LQW2","price":"5.89"},
     {"product": "Cereal", "productCode": "A12T-4GH7-QPL9-3N4M","price":"3.46"},
     {"product": "Chicken", "productCode": "E5T6-9UI3-TH15-QR88","price":"8.18"},
-    {"product": "Pop", "productCode": "YRT6-72AS-K736-L4AR","price":"1.63"},
-   {"product": "Tuna", "productCode": "65P1-UDGM-XH2M-LQW2 ","price":"5.89"}
+    {"product": "Pop", "productCode": "YRT6-72AS-K736-L4AR","price":"1.63"}
   ]
 }
