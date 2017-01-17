@@ -14,5 +14,8 @@ describe('cart.js', function () {
     it('should give a 200 with a right request body', function(done){
       request.post('/cart').send({"itemList":"A12T-4GH7-QPL9-3N4M"}).expect(200,done)
     });
+    it('should give a 200 with a lowecase product code', function(done){
+      request.post('/cart').send({"itemList":"ai2t-4gh7-QPL9-3N4M"}).expect(200,done)
+    });
   });
 });
