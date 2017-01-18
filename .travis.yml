@@ -3,6 +3,6 @@ node_js:
   - "4"
 install:
   - npm install
-  - node app.js
+  - node app.js > output.log 2>&1 &
 script:
   - node_modules/.bin/mocha tests/cart.js
