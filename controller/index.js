@@ -8,7 +8,7 @@ router.post('/', total);
 function total(req, res, next) {
   if (req.body){
     if (req.body.itemList){
-      var itemListSplit = req.body.itemList.split(',');
+      var itemListSplit = req.body.itemList.split(';');
       var subTotal = 0, price, value;
       itemListSplit.forEach(function(productCode){
         value = _.find(catalog.inventory, function (o) {
