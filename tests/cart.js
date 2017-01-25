@@ -18,7 +18,8 @@ describe('cart.js', function () {
         request.post('/cart').send({"itemList":"a12t-4gh7-QPL9-3N4M"}).expect(200,done)
     });
     it('should give a calculates a correct total with one product', function(done){
-        request.post('/cart').send({"itemList":"65p1-udgm-XH2M-LQW2"}).expect(200,done)
+        request.post('/cart').send({"itemList":"65p1-udgm-XH2M-LQW2"}).expect('{"total":"6.41"}',done)
           });
+
   });
 });
