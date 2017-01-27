@@ -35,5 +35,8 @@ describe('cart.js', function () {
     it('should give me a correct total  with a one uppercase and one lowercase code', function(done){
       request.post('/cart').send({"itemList":"A12T-4GH7-QPL9-3N4M;65p1-udgm-xh2m-lqw2"}).expect('{"total":"10.17"}').expect(200,done)
     });
+    it('should give a 400 with no body', function(done){
+      request.post('/cart').expect('{"Reason":"Invalid Request"}').expect(400,done)
+    });
   });
 });
