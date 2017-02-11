@@ -1,0 +1,5 @@
+dependencies:
+  override:
+    - npm install
+    - nohup node app.js&
+    -ls -l
