@@ -6,12 +6,3 @@ install:
   - node app.js > output.log 2>&1 &
 script:
   - node_modules/.bin/mocha tests/unit/cart.js
-notifications:
-  email:
-    recipients:
-      - naveen.bezawada@yahoo.com
-      - gsypolt@gannett.com
-      - cbonomi@corporatebrokers.com
-      - pthornton@corporatebrokers.com
-    on_success: always # default: change
-    on_failure: always # default: always
